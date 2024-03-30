@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import { HookExample } from './HookExample';
+import { HookExample } from './hooks/HookExample';
 import "./App.css";
+import { ReducerExample } from './hooks/ReducerExample';
+import { RefExample } from './hooks/RefExample';
+import { Stopwatch } from './hooks/Stopwatch';
 
 export const App = () => {
     // let name = "Abhinav";
@@ -60,10 +63,13 @@ export const App = () => {
      <div>count: {count}</div>
      <button onClick={updateByOne}>+1</button>
      <button onClick={updateByFive}>+5</button> */}
-     {show && <HookExample/>}
+     {/* {show && <HookExample/>} */}
      <br />
      <br />
-     <button onClick={() => setShow(!show)}>show/hide</button>
+     {/* <button onClick={() => setShow(!show)}>show/hide</button> */}
+     {/* <ReducerExample/> */}
+     {/* <RefExample/> */}
+     <Stopwatch/>
    </div>
   )
 }
