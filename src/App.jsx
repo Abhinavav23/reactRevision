@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { HookExample } from './hooks/HookExample';
 import "./App.css";
 import { ReducerExample } from './hooks/ReducerExample';
-import { RefExample } from './hooks/RefExample';
-import { Stopwatch } from './hooks/Stopwatch';
+import { RefExample } from './hooks/refs/RefExample';
+import { Stopwatch } from './hooks/refs/Stopwatch';
+import { Parent } from './hooks/performanceOptimisation/Parent';
 
 export const App = () => {
     // let name = "Abhinav";
@@ -69,7 +70,8 @@ export const App = () => {
      {/* <button onClick={() => setShow(!show)}>show/hide</button> */}
      {/* <ReducerExample/> */}
      {/* <RefExample/> */}
-     <Stopwatch/>
+     {/* <Stopwatch/> */}
+     <Parent/>
    </div>
   )
 }
