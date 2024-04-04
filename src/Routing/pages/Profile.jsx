@@ -1,7 +1,18 @@
-import React from 'react';
-import {NavLink, Outlet, Route, Routes} from "react-router-dom";
+import React, { useEffect } from 'react';
+import {NavLink, Outlet, Route, Routes, useNavigate} from "react-router-dom";
 
 export const Profile = () => {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        // check user login status
+        const username = localStorage.getItem("username");
+        if(!username){
+            navigate("/login");
+        }
+    }, [])
+    console.log("rendering profile");
+    
   return (
     <div>
         {/* <Routes>

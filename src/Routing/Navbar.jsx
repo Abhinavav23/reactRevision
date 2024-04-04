@@ -32,6 +32,12 @@ export const Navbar = () => {
           <NavLink to="/user">User</NavLink>
         </li>
         
+        <li>
+          {/* <a href="/cart">Cart</a> */}
+          {/* <Link to="/cart">cart</Link> */}
+          <NavLink to="/login">Login</NavLink>
+        </li>
+
       </ul>
     </div>
   );
